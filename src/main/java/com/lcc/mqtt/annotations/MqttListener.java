@@ -4,7 +4,7 @@ import com.lcc.mqtt.constant.MqttQos;
 
 import java.lang.annotation.*;
 
-@Target({ ElementType.TYPE, ElementType.METHOD, ElementType.ANNOTATION_TYPE })
+@Target({ ElementType.METHOD, ElementType.ANNOTATION_TYPE })
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface MqttListener {
