@@ -15,7 +15,7 @@ public class MqttBootstrapConfiguration {
     private static final String MQTT_LISTENER_ANNOTATION_BEAN_POSTPROCESSOR_NAME="mqtt.starter.internalMqttListenerAnnotationBeanPostProcessor";
 
     @Bean(name=MQTT_LISTENER_ANNOTATION_BEAN_POSTPROCESSOR_NAME)
-    public MqttListenerAnnotationBeanPostProcessor mqttListenerAnnotationBeanPostProcessor(MqttTemplate template){
+    public MqttListenerAnnotationBeanPostProcessor mqttListenerAnnotationBeanPostProcessor(){
         MqttListenerAnnotationBeanPostProcessor processor = new MqttListenerAnnotationBeanPostProcessor();
         return processor;
     }
